@@ -1,8 +1,6 @@
 package fr.uga.l3miage.tp2.exo1.models;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.math.BigInteger;
 import java.util.Set;
 
