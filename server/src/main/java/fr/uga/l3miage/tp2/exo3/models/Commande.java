@@ -1,12 +1,12 @@
 package fr.uga.l3miage.tp2.exo3.models;
 import javax.persistence.*;
 import java.util.Date;
-import java.util.List;
+import java.util.Set;
+
 @Entity
 public class Commande {
     @Id
     private Long id;
-    @Temporal(TemporalType.DATE)
     private Date date;
     private double montantTotal;
 
@@ -14,5 +14,5 @@ public class Commande {
     private Client client;
 
     @OneToMany(mappedBy = "commande")
-    private List<Produit> produits;
+    private Set<Produit> produits;
 }
