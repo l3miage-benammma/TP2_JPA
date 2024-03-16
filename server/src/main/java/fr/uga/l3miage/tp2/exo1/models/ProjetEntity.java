@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class ProjetEntity {
     @Id
-    @Column(name = "id")
+    @Column(name = "Id")
     private BigInteger id;
 
     @Column(name = "name")
