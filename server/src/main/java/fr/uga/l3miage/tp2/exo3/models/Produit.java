@@ -10,5 +10,7 @@ public class Produit {
     private int quantite;
 
     @ManyToOne
+    private Commande commande;
+    @ManyToOne
     private CategorieDeProduit categorie;
 }
