@@ -2,7 +2,7 @@ package fr.uga.l3miage.tp2.exo1.models;
 
 import javax.persistence.*;
 import java.util.Set;
-
+@Entity
 public class DeveloperEntity {
     @Id
     @Column(name = "lastName")
@@ -14,7 +14,7 @@ public class DeveloperEntity {
     @Column(name = "email")
     private String email;
 
-    @Column(name = "projetEntities")
-    @ManyToMany(mappedBy = "developerEntities")
+
+    @ManyToMany
     private Set<ProjetEntity> projetEntities;
 }
